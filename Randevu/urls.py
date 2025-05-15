@@ -1,13 +1,8 @@
-"""
-URL configuration for Randevu project.git 
-"""
 from django.contrib import admin
-from django.urls import path 
-from django.urls import path, include
-
+from django.urls import path
+from Randevu.views import home  # ✅ Giriş sayfası için fonksiyonu içe aktardık
 
 urlpatterns = [
-    path('admin/', admin.site.urls), 
-    path('appointments/', include('appointments.urls')), 
-    path('', home, name='home'),
+    path('admin/', admin.site.urls),
+    path('', home, name='home'),  # 🎯 Ana sayfa burada tanımlandı
 ]
