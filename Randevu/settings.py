@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Randevu.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],  # Templates klasörünü burada tanımladık
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

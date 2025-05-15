@@ -11,3 +11,5 @@ def appointment_list(request):
 
 def create_appointment(request):
     return HttpResponse("<h1>Yeni Randevu Oluştur</h1><p>Burada randevu ekleme formu olacak.</p>")
+def home(request):
+    return render(request, 'home.html')
